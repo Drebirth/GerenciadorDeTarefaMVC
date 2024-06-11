@@ -134,3 +134,4 @@ C:\Users\danie\Estudos\DIO\dotnet\desafio-mvc-gerenciador-de-tarefas\obj\Debug\n
 C:\Users\danie\Estudos\DIO\dotnet\desafio-mvc-gerenciador-de-tarefas\obj\Debug\net8.0\desafio-mvc-gerenciador-de-tarefas.pdb
 C:\Users\danie\Estudos\DIO\dotnet\desafio-mvc-gerenciador-de-tarefas\obj\Debug\net8.0\desafio-mvc-gerenciador-de-tarefas.genruntimeconfig.cache
 C:\Users\danie\Estudos\DIO\dotnet\desafio-mvc-gerenciador-de-tarefas\obj\Debug\net8.0\ref\desafio-mvc-gerenciador-de-tarefas.dll
+C:\Users\danie\Estudos\DIO\dotnet\desafio-mvc-gerenciador-de-tarefas\obj\Debug\net8.0\desafio-mvc-gerenciador-de-tarefas.sourcelink.json

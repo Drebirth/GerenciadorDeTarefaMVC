@@ -37,5 +37,33 @@ namespace desafio_mvc_gerenciador_de_tarefas.Controllers
             }
             return View(tarefa);
         }
+
+        public IActionResult Editar(int id)
+        {
+            var tarefa = _context.Tarefas.Find(id);
+
+            if(tarefa == null )
+            {
+                return NotFound();
+            }
+
+            return View(tarefa);
+        }
+
+        [HttpPost]
+        public IActionResult Editar(Tarefa tarefa)
+        {
+            var tarefaBanco = _context.Tarefas.Find(tarefa.Id);
+
+            tarefaBanco.Titulo = tarefa.Titulo;
+            tarefaBanco.Descricao = tarefa.Descricao;
+            tarefaBanco.Concluido = tarefa.Concluido;
+
+            _context.Tarefas.Update(tarefaBanco);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+
+        }
     }
 }
