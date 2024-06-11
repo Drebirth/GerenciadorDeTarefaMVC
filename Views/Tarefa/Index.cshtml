@@ -1,0 +1,52 @@
+@model IEnumerable<desafio_mvc_gerenciador_de_tarefas.Models.Tarefa>
+
+    @{
+        ViewData["Title"] = "Listagem de tarefas";
+    }
+
+    <h2>Tarefas</h2>
+    
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Titulo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Descricao)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Concluido)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Titulo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Descricao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Concluido)
+                    </td>
+                    <td>
+                        <a asp-action="Editar" asp-route-id="@item.Id">Editar</a>
+                        <a asp-action="Detalhes" asp-route-id="@item.Id">Dethales</a>
+                        <a asp-action="Deletar" asp-route-id="@item.Id">Deletar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
