@@ -38,6 +38,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZWZhXENyaWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/danie/Estudos/DIO/dotnet/desafio-mvc-gerenciador-de-tarefas/Views/Tarefa/Deletar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZWZhXERlbGV0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/danie/Estudos/DIO/dotnet/desafio-mvc-gerenciador-de-tarefas/Views/Tarefa/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZWZhXERldGFsaGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/danie/Estudos/DIO/dotnet/desafio-mvc-gerenciador-de-tarefas/Views/Tarefa/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZWZhXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
