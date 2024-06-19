@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace desafio_mvc_gerenciador_de_tarefas.Models
 {
@@ -12,7 +14,9 @@ namespace desafio_mvc_gerenciador_de_tarefas.Models
 
         public string Descricao { get; set; }
         
-        public DateTime Data { get; set; }
+        public DateTime DataInclusao { get; set; }
+
+        public DateTime DataLimite { get; set; }
         
         public bool Concluido { get; set; }
     }

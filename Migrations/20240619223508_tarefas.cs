@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace desafio_mvc_gerenciador_de_tarefas.Migrations
 {
     /// <inheritdoc />
-    public partial class alteracaoModel : Migration
+    public partial class tarefas : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,7 +19,8 @@ namespace desafio_mvc_gerenciador_de_tarefas.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Titulo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Data = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataInclusao = table.Column<DateOnly>(type: "datetime2", nullable: false),
+                    DataLimite = table.Column<DateOnly>(type: "datetime2", nullable: false),
                     Concluido = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>

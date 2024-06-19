@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using desafio_mvc_gerenciador_de_tarefas.Context;
 
@@ -11,9 +12,11 @@ using desafio_mvc_gerenciador_de_tarefas.Context;
 namespace desafio_mvc_gerenciador_de_tarefas.Migrations
 {
     [DbContext(typeof(GerenciadorDeTarefaContext))]
-    partial class GerenciadorDeTarefaContextModelSnapshot : ModelSnapshot
+    [Migration("20240619223508_tarefas")]
+    partial class tarefas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -33,10 +36,10 @@ namespace desafio_mvc_gerenciador_de_tarefas.Migrations
                     b.Property<bool>("Concluido")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("DataInclusao")
+                    b.Property<DateOnly>("DataInclusao")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DataLimite")
+                    b.Property<DateOnly>("DataLimite")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")

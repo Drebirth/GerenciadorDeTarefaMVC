@@ -12,8 +12,8 @@ using desafio_mvc_gerenciador_de_tarefas.Context;
 namespace desafio_mvc_gerenciador_de_tarefas.Migrations
 {
     [DbContext(typeof(GerenciadorDeTarefaContext))]
-    [Migration("20240611003512_alteracaoModel")]
-    partial class alteracaoModel
+    [Migration("20240619224004_alteracaoTarefa")]
+    partial class alteracaoTarefa
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,7 +36,10 @@ namespace desafio_mvc_gerenciador_de_tarefas.Migrations
                     b.Property<bool>("Concluido")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("Data")
+                    b.Property<DateOnly>("DataInclusao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateOnly>("DataLimite")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")

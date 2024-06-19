@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using desafio_mvc_gerenciador_de_tarefas.Context;
 
@@ -11,9 +12,11 @@ using desafio_mvc_gerenciador_de_tarefas.Context;
 namespace desafio_mvc_gerenciador_de_tarefas.Migrations
 {
     [DbContext(typeof(GerenciadorDeTarefaContext))]
-    partial class GerenciadorDeTarefaContextModelSnapshot : ModelSnapshot
+    [Migration("20240619230507_alteracaoTarefa2")]
+    partial class alteracaoTarefa2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
