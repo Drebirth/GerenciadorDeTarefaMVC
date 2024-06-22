@@ -11,10 +11,6 @@ Essa lista de tarefas precisa ter um CRUD, ou seja, deverá permitir a você obt
 
 A sua aplicação deverá ser do tipo Web API ou MVC, fique a vontade para implementar a solução que achar mais adequado.
 
-A sua classe principal, a classe de tarefa, deve ser a seguinte:
-
-![Diagrama da classe Tarefa](diagrama.png)
-
 Não se esqueça de gerar a sua migration para atualização no banco de dados.
 
 ## Métodos esperados
@@ -48,5 +44,12 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
 ```
 
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+## Projeto
+
+Foi escrito um projeto MVC utilizando tudo que foi aprendido no módulo, foi adicionado uma validação para data/hora das tarefas
+não permitindo colocar uma tarefa com uma data limite maior do que a data de inclusão.
+
+Classe principal ->
+![image](https://github.com/Drebirth/GerenciadorDeTarefaMVC/assets/32640102/c5ed6a14-4d81-4813-adc1-9d269ef15a91)
+
+
