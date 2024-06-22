@@ -50,6 +50,9 @@ Foi escrito um projeto MVC utilizando tudo que foi aprendido no módulo, foi adi
 não permitindo colocar uma tarefa com uma data limite maior do que a data de inclusão.
 
 Classe principal ->
+
+
+
 ![image](https://github.com/Drebirth/GerenciadorDeTarefaMVC/assets/32640102/c5ed6a14-4d81-4813-adc1-9d269ef15a91)
 
 
