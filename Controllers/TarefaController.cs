@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using desafio_mvc_gerenciador_de_tarefas.Context;
 using desafio_mvc_gerenciador_de_tarefas.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace desafio_mvc_gerenciador_de_tarefas.Controllers
 {
@@ -29,13 +31,31 @@ namespace desafio_mvc_gerenciador_de_tarefas.Controllers
         [HttpPost]
         public IActionResult Criar(Tarefa tarefa)
         {
+            // if(ModelState.IsValid)
+            // {//validacao de data
+            //    if(tarefa.DataInclusao > tarefa.DataLimite)
+            //     {
+            //     ModelState.AddModelError("DataLimite"," A data Limite não pode ser superior que a data de inclusão");
+            //     return View(tarefa);//retorna para a mesma pagina para que seja feita a correção antes da inclusao.
+            //     } 
+            // }else{
+            //     _context.Tarefas.Add(tarefa);
+            //     _context.SaveChanges();
+            //     return RedirectToAction(nameof(Index));
+            // }
+            if(tarefa.DataInclusao > tarefa.DataLimite)
+            {
+                ModelState.AddModelError("DataLimite"," A data Limite não pode ser superior que a data de inclusão");
+                return View(tarefa);
+            }
             if(ModelState.IsValid)
             {
                 _context.Tarefas.Add(tarefa);
                 _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
-            return View(tarefa);
+            return RedirectToAction(nameof(Index));
+            
         }
 
         public IActionResult Editar(int id)

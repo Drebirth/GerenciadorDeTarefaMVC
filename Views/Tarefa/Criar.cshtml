@@ -19,13 +19,17 @@
                 <label asp-for="Descricao" class="control-label"></label>
                 <textarea asp-for="Descricao" class="form-control" rows="3"></textarea>
             </div>
+            
             <div class="form-group">
                 <label asp-for="DataInclusao" class="control-label"></label>
                 <input asp-for="DataInclusao" class="form-control"/>
+                
             </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="DataLimite" class="control-label"></label>
                 <input asp-for="DataLimite" class="form-control"/>
+                <span asp-validation-for="DataLimite" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Concluido" class="control-label"></label>

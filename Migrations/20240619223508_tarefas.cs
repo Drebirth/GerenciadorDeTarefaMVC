@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
-
+//foi adicionado datime2 no orm para criar o banco com data e hora
 namespace desafio_mvc_gerenciador_de_tarefas.Migrations
 {
     /// <inheritdoc />
