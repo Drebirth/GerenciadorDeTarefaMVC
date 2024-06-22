@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FoyUqZE4tFI=",
+  "dgSpecHash": "dq+CuoLRq1g=",
   "success": true,
-  "projectFilePath": "c:\\Users\\danie\\Estudos\\DIO\\dotnet\\desafio-mvc-gerenciador-de-tarefas\\desafio-mvc-gerenciador-de-tarefas.csproj",
+  "projectFilePath": "C:\\Users\\danie\\Estudos\\DIO\\dotnet\\desafio-mvc-gerenciador-de-tarefas\\desafio-mvc-gerenciador-de-tarefas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("desafio-mvc-gerenciador-de-tarefas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb8de2b3be9f12b6d674479d0ab86c4411c97e1b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0477f1f56e0906e8a1bad3986eb27d0753f6c98b")]
 [assembly: System.Reflection.AssemblyProductAttribute("desafio-mvc-gerenciador-de-tarefas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("desafio-mvc-gerenciador-de-tarefas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

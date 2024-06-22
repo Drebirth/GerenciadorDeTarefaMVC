@@ -77,7 +77,11 @@ namespace desafio_mvc_gerenciador_de_tarefas.Controllers
 
             tarefaBanco.Titulo = tarefa.Titulo;
             tarefaBanco.Descricao = tarefa.Descricao;
+            tarefaBanco.DataInclusao = tarefa.DataInclusao;
+            tarefaBanco.DataLimite = tarefa.DataLimite;
             tarefaBanco.Concluido = tarefa.Concluido;
+
+           
 
             _context.Tarefas.Update(tarefaBanco);
             _context.SaveChanges();
