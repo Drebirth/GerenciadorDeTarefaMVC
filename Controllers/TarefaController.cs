@@ -81,8 +81,6 @@ namespace desafio_mvc_gerenciador_de_tarefas.Controllers
             tarefaBanco.DataLimite = tarefa.DataLimite;
             tarefaBanco.Concluido = tarefa.Concluido;
 
-           
-
             _context.Tarefas.Update(tarefaBanco);
             _context.SaveChanges();
 
