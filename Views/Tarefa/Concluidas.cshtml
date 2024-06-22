@@ -1,0 +1,63 @@
+@model IEnumerable<desafio_mvc_gerenciador_de_tarefas.Models.Tarefa>
+
+    @{
+        ViewData["Title"] = "Listagem de tarefas concluídas";
+    }
+
+    <h2>Tarefas</h2>
+    
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                   ID <!--@Html.DisplayNameFor(model => model.Id)-->
+                </th>
+                <th>
+                   Título <!-- @Html.DisplayNameFor(model => model.Titulo) -->
+                </th>
+                <th>
+                   Descrição <!-- @Html.DisplayNameFor(model => model.Descricao) -->
+                </th>
+                <th>
+                  Data de inicio <!--  @Html.DisplayNameFor(model => model.DataInclusao) -->
+                </th>
+                <th>
+                   Data Limite <!-- @Html.DisplayNameFor(model => model.DataLimite) -->
+                </th>
+                <th>
+                   Concluído <!-- @Html.DisplayNameFor(model => model.Concluido) -->
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Titulo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Descricao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.DataInclusao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.DataLimite)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Concluido)
+                    </td>
+                   
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <br>
+    <a asp-action="Criar">Incluir uma nova tarefa</a>

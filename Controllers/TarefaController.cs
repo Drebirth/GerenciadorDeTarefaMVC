@@ -19,8 +19,14 @@ namespace desafio_mvc_gerenciador_de_tarefas.Controllers
         }
         public IActionResult Index()
         {
-            var contatos = _context.Tarefas.ToList();
-            return View(contatos);
+            var tarefas = _context.Tarefas.ToList();
+            return View(tarefas);
+        }
+
+        public IActionResult Concluidas()
+        {
+            var tarefas = _context.Tarefas.ToList().Where(x => x.Concluido);
+            return View(tarefas);
         }
 
         public IActionResult Criar()
